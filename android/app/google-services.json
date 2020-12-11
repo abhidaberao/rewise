@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "168741031551",
+    "firebase_url": "https://rewise-77.firebaseio.com",
+    "project_id": "rewise-77",
+    "storage_bucket": "rewise-77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168741031551:android:03ccd93e5750b6b6b6f94a",
+        "android_client_info": {
+          "package_name": "com.harmony.rewise3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168741031551-sbp2gg3kfdfag7uol3tc7b8d7pfac7fi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9VYxXWS3nZRf30OzxHyytTfvmiFcofvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168741031551-sbp2gg3kfdfag7uol3tc7b8d7pfac7fi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168741031551:android:dbea677fc949583fb6f94a",
+        "android_client_info": {
+          "package_name": "com.harmonydesigns.rewise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168741031551-lbike012me70q7kt3nl4iro7d08prh9k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.harmonydesigns.rewise",
+            "certificate_hash": "004abb5ddf316d068e8929d3bbe0f0d3f88b88d8"
+          }
+        },
+        {
+          "client_id": "168741031551-sbp2gg3kfdfag7uol3tc7b8d7pfac7fi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9VYxXWS3nZRf30OzxHyytTfvmiFcofvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168741031551-sbp2gg3kfdfag7uol3tc7b8d7pfac7fi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
