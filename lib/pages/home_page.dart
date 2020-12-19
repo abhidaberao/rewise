@@ -2,7 +2,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter_web/cupertino.dart';
 import 'package:flutter_web/material.dart';
 import 'package:flutter_web/services.dart';
-import 'package:flutter_web_datetime_picker/flutter_datetime_picker.dart';
+import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:myapp/database/db_classes.dart';
 import 'package:myapp/design/drawer.dart';
