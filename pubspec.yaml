@@ -36,6 +36,7 @@ dependencies:
   emoji_picker:
   marquee_widget:
   timeline_tile:
+  flutter_web:
   avataaar_image:
   url_launcher:
   ionicons:
