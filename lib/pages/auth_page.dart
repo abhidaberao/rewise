@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/semantics.dart';
+import 'package:flutter_web/material.dart';
+import 'package:flutter_web/semantics.dart';
 import 'package:myapp/design/rew_icon_icons.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:google_sign_in/google_sign_in.dart';

@@ -2,8 +2,8 @@
 
 
 import 'package:firebase_database/firebase_database.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/semantics.dart';
+import 'package:flutter_web/material.dart';
+import 'package:flutter_web/semantics.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:myapp/design/rew_icon_icons.dart';
 import 'package:myapp/design/subject_card.dart';

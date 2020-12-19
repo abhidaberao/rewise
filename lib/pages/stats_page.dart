@@ -1,6 +1,6 @@
 
-import 'package:flutter/material.dart';
-import 'package:flutter/semantics.dart';
+import 'package:flutter_web/material.dart';
+import 'package:flutter_web/semantics.dart';
 import 'package:myapp/design/rew_icon_icons.dart';
 
 class StatsPage extends StatefulWidget{

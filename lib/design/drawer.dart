@@ -1,7 +1,7 @@
 
 import 'package:avataaar_image/avataaar_image.dart';
-import 'package:flutter_web/cupertino.dart';
-import 'package:flutter_web/material.dart';
+import 'package:flutter_web_web/cupertino.dart';
+import 'package:flutter_web_web/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:myapp/design/profile.dart';
 import 'package:url_launcher/url_launcher.dart';

@@ -2,9 +2,9 @@
 import 'package:emoji_picker/emoji_picker.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/semantics.dart';
+import 'package:flutter_web/cupertino.dart';
+import 'package:flutter_web/material.dart';
+import 'package:flutter_web/semantics.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:myapp/database/db_classes.dart';
 import 'package:myapp/database/provider.dart';

@@ -1,13 +1,13 @@
 
 
 
-import 'dart:ui';
+import 'package:flutter_web_ui/ui.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:myapp/database/db_classes.dart';
 import 'package:myapp/design/session_card.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/semantics.dart';
+import 'package:flutter_web/material.dart';
+import 'package:flutter_web/semantics.dart';
 import 'package:myapp/design/rew_icon_icons.dart';
 
 class TodayPage extends StatefulWidget{
