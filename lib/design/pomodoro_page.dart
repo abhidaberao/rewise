@@ -7,6 +7,7 @@ import 'package:flutter_web/material.dart';
 import 'package:flutter_web/semantics.dart';
 import 'package:marquee_widget/marquee_widget.dart';
 import 'package:myapp/database/db_classes.dart';
+import 'package:myapp/database/provider.dart';
 import 'package:myapp/design/rew_icon_icons.dart';
 import 'package:myapp/scheduler/sm2_algo.dart';
 
@@ -88,7 +89,7 @@ void pauseTimer() {
   Widget build(BuildContext context) {
 
     final FirebaseAuth auth = FirebaseAuth.instance;
-    final User user = auth.currentUser;
+    final FirebaseUser user = FBProvider.user;
     final uid = user.uid;
     DatabaseReference uidRef = FirebaseDatabase.instance.reference().child("users").child(user.uid);
 

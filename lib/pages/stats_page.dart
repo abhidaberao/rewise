@@ -55,9 +55,9 @@ class _StatsPageState extends State<StatsPage> {
                 ],
               ),
               Divider(
-                thickness: 1,
+                //thickness: 1,
                 indent: 40,
-                endIndent: 40,
+                //endIndent: 40,
               ),
               Center(child: Text("Section under work!"),)
             ],

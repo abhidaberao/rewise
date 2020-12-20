@@ -2,7 +2,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter_web/cupertino.dart';
 import 'package:flutter_web/material.dart';
 import 'package:flutter_web/services.dart';
-import 'package:flutter_web_datetime_picker/flutter_datetime_picker.dart';
+import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:myapp/database/db_classes.dart';
 import 'package:myapp/design/drawer.dart';
@@ -116,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
         title: Text(getTitle(),style: TextStyle(color:Colors.black, fontFamily: 'Kelson',),),
 
         actions: [
-          navIndex==1?IconButton(icon: Icon(Ionicons.calendar_sharp, color: Colors.black, size: 25),
+          navIndex==1?IconButton(icon: Icon(Icons.calendar_today, color: Colors.black, size: 25),
           onPressed: (){
             filterDialog();
           },
@@ -197,7 +197,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
                                         children: <Widget>[Icon(Icons.add,color: Colors.white,),Text(" Task",style: TextStyle(color: Colors.white,fontFamily: "Kelson"),)],),),
                     onPressed: (){
                       if(navIndex==1){
-                        newSessionDialog(data);
+                        //newSessionDialog(data);
                       }
                       else{
                       buttonAnimationFrom(1, 2);
@@ -301,7 +301,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
 
   filterDialog(){
     showDialog(
-      barrierColor: Colors.black.withOpacity(0.8),
+      //barrierColor: Colors.black.withOpacity(0.8),
       barrierDismissible: false,
         context: context,
         builder: (context){
@@ -505,9 +505,9 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
                 onPressed: (){
                   showDialog(context: context,
                   builder: (context) => new Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
+                    child: Container(
+                      child: Text("lol")
+                        /*
                         EmojiPicker(
                           onEmojiSelected: (emoji,category){
                             setState(() {
@@ -515,8 +515,8 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
                             });
                             Navigator.of(context).pop();
                           }
-                          ),
-                        ]
+                          ),*/
+                        
                     )
                   ),
                   );
@@ -635,7 +635,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
    
   }
 
-
+/*
   newSessionDialog(var data){
     List<DropdownMenuItem> subjects = [];
     Map<String,List<DropdownMenuItem>> topics = new Map<String,List<DropdownMenuItem>>();
@@ -734,7 +734,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
                         sessionType: SessionType.STUDY
                       );
 
-                      DatePicker.showDatePicker(context,
+                     DatePicker.showDatePicker(context,
                               showTitleActions: true,
                               minTime: DateTime.now(),
                               maxTime: DateTime.now().add(Duration(days: 365*5)), onChanged: (date) {
@@ -752,9 +752,9 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
                           
                           currentTime: DateTime.now(),
                           theme: DatePickerTheme(
-                            doneStyle: TextStyle(
+                            /*doneStyle: TextStyle(
                               color: Colors.redAccent
-                            ),
+                            ),*/
                           ),
                           );
 
@@ -795,7 +795,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
 
    
   }
-
+*/
 
 addSession(subjectDropValue,topicDropValue,newSession,data){
 

@@ -64,7 +64,7 @@ class _SyllabusPageState extends State<SyllabusPage> {
         controller: scontroller,
         decoration: InputDecoration(
           hintText: "find subject",
-          icon: Icon(Ionicons.search_outline,size: 20,),
+          icon: Icon(Icons.search,size: 20,),
           contentPadding: EdgeInsets.symmetric(horizontal:0),
           border: OutlineInputBorder(borderSide: BorderSide.none,borderRadius: BorderRadius.all(Radius.circular(0.0))),
         ),

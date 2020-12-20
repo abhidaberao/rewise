@@ -3,6 +3,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter_web/cupertino.dart';
 import 'package:flutter_web/material.dart';
 import 'package:myapp/database/db_classes.dart';
+import 'package:myapp/database/provider.dart';
 import 'package:myapp/design/pomodoro_page.dart';
 import 'package:myapp/scheduler/sm2_algo.dart';
 import 'rew_icon_icons.dart';
@@ -42,7 +43,7 @@ class SessionCardState extends State<SessionCard>{
 
 
     final FirebaseAuth auth = FirebaseAuth.instance;
-    final User user = auth.currentUser;
+    final FirebaseUser user = FBProvider.user;
     final uid = user.uid;
     DatabaseReference uidRef = FirebaseDatabase.instance.reference().child("users").child(user.uid);
 
@@ -94,7 +95,6 @@ class SessionCardState extends State<SessionCard>{
                               alignment: WrapAlignment.start,
                               children: <Widget>[
                                 Chip(
-                                  visualDensity: VisualDensity.compact,
                                   backgroundColor: Colors.transparent,
                                   materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5),side: BorderSide(color: Colors.grey)),
@@ -102,7 +102,6 @@ class SessionCardState extends State<SessionCard>{
                                 ),        
                                 Chip(
                                   labelPadding: EdgeInsets.only(right: 10),
-                                  visualDensity: VisualDensity.compact,
                                   backgroundColor: session.sessionStatus==SessionStatus.COMPLETED?Colors.green.withOpacity(0.2):Colors.red.shade300.withOpacity(0.2),
                                   materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5),side: BorderSide(color: session.sessionStatus==SessionStatus.COMPLETED?Colors.green:Colors.red.shade300)),
@@ -153,7 +152,6 @@ class SessionCardState extends State<SessionCard>{
                                           
                                           Expanded(
                                             child: LinearProgressIndicator(
-                                              minHeight: 10,
                                               valueColor:  new AlwaysStoppedAnimation<Color>(Colors.white),
                                               backgroundColor: Colors.black.withOpacity(0.2),
                                             value: topic.mastery!=null?topic.mastery/100:0,

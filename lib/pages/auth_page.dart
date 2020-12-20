@@ -203,7 +203,8 @@ bool validateAndSave(){
                       validity: passValidity,
                       warning: passWarning,
                       bicon: Icon(Icons.lock_outline),
-                      btype: TextInputType.visiblePassword,),                    
+                     // btype: TextInputType.visiblePassword,
+                     ),                    
                     SizedBox(height:30),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -217,7 +218,7 @@ bool validateAndSave(){
                                       setState(() {
                                         _isLoading = true;
                                       });
-                                      widget.auth.signInWithGoogle().then((User user){
+                                      widget.auth.signInWithGoogle().then((FirebaseUser user){
                                         setState(() {
                                           _isLoading = false;
                                         });
@@ -358,7 +359,7 @@ ButterTextField({this.btext,this.bcontroller,this.bicon,this.btype,this.validity
         ),
         controller: bcontroller,
         keyboardType: btype,
-        obscureText: (btype==TextInputType.visiblePassword)?true:false,
+       // obscureText: (btype==TextInputType.visiblePassword)?true:false,
       ),
     );
   }

@@ -74,7 +74,7 @@ class SM2Scheduler{
   schedule(Session session) async{
 
     final FirebaseAuth auth = FirebaseAuth.instance;
-    final User user = auth.currentUser;
+    final FirebaseUser user = await auth.currentUser();
     final uid = user.uid;
     DatabaseReference uidRef = FirebaseDatabase.instance.reference().child("users").child(user.uid);
     

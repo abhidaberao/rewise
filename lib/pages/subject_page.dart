@@ -99,7 +99,7 @@ class _SubjectPageState extends State<SubjectPage> {
         decoration: InputDecoration(
           hintText: "find topic",
           hintStyle: TextStyle(color: Colors.white),
-          icon: Icon(Ionicons.search_outline,size: 20,color: Colors.white,),
+          icon: Icon(Icons.search,size: 20,color: Colors.white,),
           contentPadding: EdgeInsets.symmetric(horizontal:0),
           border: OutlineInputBorder(borderSide: BorderSide.none,borderRadius: BorderRadius.all(Radius.circular(0.0))),
         ),
@@ -224,10 +224,10 @@ class _SubjectPageState extends State<SubjectPage> {
 );
 }
 
-    editSubjectDialog(){
+    editSubjectDialog()async{
 
     final FirebaseAuth auth = FirebaseAuth.instance;
-    final User user = auth.currentUser;
+    final FirebaseUser user = await auth.currentUser();
     final uid = user.uid;
     DatabaseReference uidRef = FirebaseDatabase.instance.reference().child("users").child(user.uid);
 
@@ -314,15 +314,15 @@ class _SubjectPageState extends State<SubjectPage> {
                   builder: (context) => new Center(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        EmojiPicker(
+                      children: [Text("lol")
+                        /*EmojiPicker(
                           onEmojiSelected: (emoji,category){
                             setState(() {
                               sel_emoji = emoji.emoji;
                             });
                             Navigator.of(context).pop();
                           }
-                          ),
+                          )*/,
                         ]
                     )
                   ),

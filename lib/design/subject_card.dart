@@ -43,7 +43,7 @@ class SubjectCardState extends State<SubjectCard>{
         tag: widget.subject.subjectId+'scaf',
         child:Card( 
                 elevation: 5,
-                shadowColor: Colors.red,
+                //shadowColor: Colors.red,
                 color:Colors.redAccent,
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5),side: BorderSide(width: 0,color: Colors.grey.shade300)),
                 margin: EdgeInsets.symmetric(horizontal: 15,vertical: 15),

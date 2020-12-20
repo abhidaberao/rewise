@@ -5,6 +5,7 @@ import 'package:flutter_web_ui/ui.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:myapp/database/db_classes.dart';
+import 'package:myapp/database/provider.dart';
 import 'package:myapp/design/session_card.dart';
 import 'package:flutter_web/material.dart';
 import 'package:flutter_web/semantics.dart';
@@ -44,7 +45,7 @@ class _TodayPageState extends State<TodayPage> {
     });}
 
     final FirebaseAuth auth = FirebaseAuth.instance;
-    final User user = auth.currentUser;
+    final FirebaseUser user = FBProvider.user;
     final uid = user.uid;
     DatabaseReference uidRef = FirebaseDatabase.instance.reference().child("users").child(user.uid);
 

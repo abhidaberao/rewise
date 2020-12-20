@@ -33,7 +33,7 @@ class TopicCard extends StatelessWidget{
           data: ThemeData(accentColor: Colors.black),
           child: ExpansionTile(
             trailing: Icon(Icons.more_vert),
-            childrenPadding: EdgeInsets.all(0),
+           // childrenPadding: EdgeInsets.all(0),
         title: Container(
                     child: Column(
                       children: <Widget>[
@@ -76,7 +76,7 @@ class TopicCard extends StatelessWidget{
                                           
                                           Expanded(
                                             child: LinearProgressIndicator(
-                                              minHeight: 10,
+                                              //minHeight: 10,
                                               valueColor:  new AlwaysStoppedAnimation<Color>(Colors.white),
                                               backgroundColor: Colors.black.withOpacity(0.2),
                                             value: topic.mastery!=null?topic.mastery/100:0,
@@ -277,7 +277,7 @@ class TopicCard extends StatelessWidget{
       )));
     if(topic.sessions!=null&&topic.sessions.isNotEmpty){topic.sessions.forEach((s) {
       s = sessions[s];
-      tiles.add(   TimelineTile(
+      tiles.add(   Text("lol")/*TimelineTile(
                     endChild: Card(
                       color: s['sessionStatus']==SessionStatus.COMPLETED.toString()?Colors.redAccent:Colors.white,
                       margin: EdgeInsets.symmetric(vertical:5,horizontal: 10),
@@ -293,15 +293,15 @@ class TopicCard extends StatelessWidget{
                     ),
                   indicatorStyle: IndicatorStyle(
                     width: 10,
-                    color: Colors.grey.shade300
+                    //color: Colors.grey.shade300
                   ),
                   beforeLineStyle: LineStyle(
-                    color: n==0?Colors.transparent:Colors.grey.shade300
+                    //color: n==0?Colors.transparent:Colors.grey.shade300
                   ),
                   afterLineStyle: LineStyle(
-                    color: n==sessions.length-1?Colors.transparent:Colors.grey.shade300
+                   // color: n==sessions.length-1?Colors.transparent:Colors.grey.shade300
                   ),
-                ));
+                )*/);
 
         n++;
     });

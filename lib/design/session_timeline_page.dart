@@ -54,7 +54,7 @@ class SessionTimelineState extends State<SessionTimeline> {
     if(sessions==null?false:sessions.isNotEmpty){
           sessions.forEach((sid) {
             Map session = sessionMap[sid];
-            l.add(new TimelineTile(
+            l.add(Text("lol")/*new TimelineTile(
 
 
               beforeLineStyle: LineStyle(
@@ -126,7 +126,7 @@ class SessionTimelineState extends State<SessionTimeline> {
                   ),
                 ),
               ),
-            ));
+            )*/);
     });
     }
     else{

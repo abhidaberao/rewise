@@ -23,7 +23,7 @@ class HomeDrawer extends StatelessWidget{
           children: <Widget>[
              
       ListTile(
-                    visualDensity: VisualDensity.compact,
+                    
 
         title: Text(data['email'].toString(),style: TextStyle(color:Colors.black,)),
 
@@ -31,8 +31,7 @@ class HomeDrawer extends StatelessWidget{
 
       Divider(height: 0,),
           ListTile(
-            visualDensity: VisualDensity.compact,
-        leading: Icon(Ionicons.settings_outline,color: Colors.black,),
+        leading: Icon(Icons.settings,color: Colors.black,),
         title: Text('Settings'),
         onTap: () {
         
@@ -40,9 +39,8 @@ class HomeDrawer extends StatelessWidget{
       ),
             Divider(height: 0,),
                 ListTile(
-                              visualDensity: VisualDensity.compact,
 
-        leading: Icon(Ionicons.mail_open_outline,color: Colors.black,),
+        leading: Icon(Icons.mail_outline,color: Colors.black,),
         title: Text('Feedback',),
         onTap: () {
           _launchURL();
@@ -50,18 +48,16 @@ class HomeDrawer extends StatelessWidget{
       ),
       Divider(height: 0,),
                 ListTile(
-                              visualDensity: VisualDensity.compact,
 
-        leading: Icon(Ionicons.information_circle_outline,color: Colors.black,),
+        leading: Icon(Icons.info_outline,color: Colors.black,),
         title: Text('About',),
         onTap: () {
         },
       ),
             Divider(height: 0,),
       ListTile(
-                    visualDensity: VisualDensity.compact,
 
-        leading: Icon(Ionicons.power_outline,color: Colors.black,),
+        leading: Icon(Icons.power,color: Colors.black,),
         title: Text('Log Out',style: TextStyle(color:Colors.redAccent, )),
         onTap: () {
           logoutCallback();
