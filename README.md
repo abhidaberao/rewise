@@ -1,2 +1,4 @@
-# rewise3
- The Revision App
+# Rewise
+ Revision Scheduling Application.
+ 
+ 
